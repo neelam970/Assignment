@@ -1,0 +1,45 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Clearfix hack */
+}
+
+.left {
+    width: 45%; /* Adjust width as needed */
+    float: left;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 20px; /* Adjust margin to create space */
+}
+
+.right {
+    width: 45%; /* Adjust width as needed */
+    float: right;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: 20px; /* Adjust margin to create space */
+}
+
+.footer {
+    clear: both; /* Clear float */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
