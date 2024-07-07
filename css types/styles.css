@@ -1,0 +1,7 @@
+/* External CSS */
+h1 {
+    text-align: center; /* External CSS */
+}
+.internal-style {
+    font-weight: bold; /* External CSS */
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333333;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #333333;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #666666;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .youtube-container {
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+        .youtube-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .player-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .player-list li {
+            margin-bottom: 5px;
+        }
+        .player-list strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cricket Project</h1>
+        
+        <!-- Upcoming Matches Section -->
+        <div class="section">
+            <div class="section-title">Upcoming Matches</div>
+            <div class="section-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Match</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>July 10, 2024</td>
+                            <td>India vs Australia</td>
+                            <td>Melbourne Cricket Ground, Melbourne</td>
+                        </tr>
+                        <tr>
+                            <td>July 15, 2024</td>
+                            <td>England vs New Zealand</td>
+                            <td>Lords, London</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Subscribe Form Section -->
+        <div class="section">
+            <div class="section-title">Subscribe for Updates</div>
+            <div class="section-content">
+                <form action="subscribe.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br><br>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+        
+        <!-- Latest Highlights Section -->
+        <div class="section">
+            <div class="section-title">Latest Highlights</div>
+            <div class="section-content">
+                <div class="youtube-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top Players Section -->
+        <div class="section">
+            <div class="section-title">Top Players</div>
+            <div class="section-content">
+                <ul class="player-list">
+                    <li><strong>Virat Kohli</strong> - India</li>
+                    <li><strong>Steve Smith</strong> - Australia</li>
+                    <li><strong>Kane Williamson</strong> - New Zealand</li>
+                    <li><strong>Joe Root</strong> - England</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
